@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+// absolute用
+@mixin absPosition ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin contentSentense($top: 0) {
+  position:absolute;
+  top:$top;
+  padding-top: 10px;
+  background-color: rgba( 255, 255, 255, 0.55 );
+  color: black;
+  margin: 10px;
+  height: 100px;
+
+  h3{
+    font-weight: normal;
+    padding-left: 5px;
+    font-size:12px      
+  }
+  p{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 7px;
+  }
+}
+
+/*没
+@mixin contentSentenseIphone($top: 0) {
+  display: block;
+  position:absolute;
+  top:$top;
+  padding-top: 10px;
+  background-color: rgba( 255, 255, 255, 0.55 );
+  color: black;
+  margin: 10px;
+  height: 100px;
+  width: 100%;
+
+  h3{
+    font-weight: normal;
+    padding-left: 5px;
+    font-size:12px      
+  }
+  p{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 7px;
+  }
+}
+*/

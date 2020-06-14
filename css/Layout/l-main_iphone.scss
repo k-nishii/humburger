@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import "../Foundation/variable.scss";
+@import "../Foundation/mixin.scss";
+
+@media screen and (max-width: 896px) {
+/*フロントページのコンテンツ部
+--------------------------- */
+article{
+  background-color: $contentBkColor;
+  width:100%
+}
+
+// メインコンテンツ（トップ検索部）
+.head{
+ 
+  display: block;
+  height: 240px;
+  
+  //検索分のタイトル
+  h1{
+    line-height: 100px;
+    margin: 0 auto;
+    text-align:center;
+  }
+  form{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  p{
+    display: block;
+    text-align:right;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-size: 2.0rem;
+    color: $searchTitleFontColor;
+    font-weight: bold;
+  }
+}
+
+// メインコンテンツ（takeOut,eatIn部）
+.contents{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column ;
+
+  .content{
+    margin: 0 auto;
+    position:relative;
+    
+    .contentTiele {
+      position:absolute;
+      top:20px;
+      font-size: 40px;
+      padding-left: 10px;
+      color:white;
+    }
+    .contentSentense1{
+      @include contentSentense(50%);
+    }
+    .contentSentense2{
+      
+      @include contentSentense(370px);
+    }
+  }
+
+}
+
+// メインコンテンツ（マップ部）
+.map-img {
+  background-image: url(../../img/map.png);
+  background-size: cover;
+  position: relative;
+  height: 650px;
+  z-index: 0;
+
+  ::before{
+    /* 透過した黒を上から重ねるイメージ */
+    background-color: rgba(0,0,0,0.2);
+    @include absPosition(0, 0, 0, 0);
+    content: ' ';
+    z-index: -1;
+  }
+
+  .map-text{
+    background-color: rgba(0,0,0,0.5);
+    padding-top: $mapTitlePaddingTop;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: $mapFontColor;
+    width: 60%;
+    height: calc(100% - #{$mapTitlePaddingTop});
+  }
+
+  h3{
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  p{
+    padding-top: 20px;
+    color: $mapFontColor;
+  }
+}
+
+/*サイドバー
+--------------------------- */
+aside{
+  display: none;
+}
+}

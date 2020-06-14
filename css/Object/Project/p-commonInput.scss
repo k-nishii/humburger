@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@import "../../Foundation/variable.scss";
+@import "../../Foundation/mixin.scss";
+  
+// 検索部（検索入力のテキストボックスと検索ボタン）
+.searchForm{
+  display: flex;
+  justify-content: center;
+}

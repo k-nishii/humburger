@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* メインコンテンツ_全体 */
+/* メインコンテンツ_検索部 */
+/* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_マップ部 */
+/* メインコンテンツ_サイドバー */
+/* フッター */
+/*フッター
+--------------------------- */
+footer {
+  width: 100%;
+  background: #9D8670;
+  padding: 26px 0;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer p {
+  font-size: 0.875rem;
+  padding-top: 10px;
+}
+/*# sourceMappingURL=l-footer.css.map */

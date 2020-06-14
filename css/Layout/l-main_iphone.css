@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* メインコンテンツ_全体 */
+/* メインコンテンツ_検索部 */
+/* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_マップ部 */
+/* メインコンテンツ_サイドバー */
+/* フッター */
+/*没
+@mixin contentSentenseIphone($top: 0) {
+  display: block;
+  position:absolute;
+  top:$top;
+  padding-top: 10px;
+  background-color: rgba( 255, 255, 255, 0.55 );
+  color: black;
+  margin: 10px;
+  height: 100px;
+  width: 100%;
+
+  h3{
+    font-weight: normal;
+    padding-left: 5px;
+    font-size:12px      
+  }
+  p{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 7px;
+  }
+}
+*/
+@media screen and (max-width: 896px) {
+  /*フロントページのコンテンツ部
+--------------------------- */
+  article {
+    background-color: #FFF7EF;
+    width: 100%;
+  }
+  .head {
+    display: block;
+    height: 240px;
+  }
+  .head h1 {
+    line-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .head form {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .head p {
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-size: 2.0rem;
+    color: #707070;
+    font-weight: bold;
+  }
+  .contents {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contents .content {
+    margin: 0 auto;
+    position: relative;
+  }
+  .contents .content .contentTiele {
+    position: absolute;
+    top: 20px;
+    font-size: 40px;
+    padding-left: 10px;
+    color: white;
+  }
+  .contents .content .contentSentense1 {
+    position: absolute;
+    top: 50%;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+    color: black;
+    margin: 10px;
+    height: 100px;
+  }
+  .contents .content .contentSentense1 h3 {
+    font-weight: normal;
+    padding-left: 5px;
+    font-size: 12px;
+  }
+  .contents .content .contentSentense1 p {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 7px;
+  }
+  .contents .content .contentSentense2 {
+    position: absolute;
+    top: 370px;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+    color: black;
+    margin: 10px;
+    height: 100px;
+  }
+  .contents .content .contentSentense2 h3 {
+    font-weight: normal;
+    padding-left: 5px;
+    font-size: 12px;
+  }
+  .contents .content .contentSentense2 p {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 7px;
+  }
+  .map-img {
+    background-image: url(../../img/map.png);
+    background-size: cover;
+    position: relative;
+    height: 650px;
+    z-index: 0;
+  }
+  .map-img ::before {
+    /* 透過した黒を上から重ねるイメージ */
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    z-index: -1;
+  }
+  .map-img .map-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: #fff;
+    width: 60%;
+    height: calc(100% - 100px);
+  }
+  .map-img h3 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  .map-img p {
+    padding-top: 20px;
+    color: #fff;
+  }
+  /*サイドバー
+--------------------------- */
+  aside {
+    display: none;
+  }
+}
+/*# sourceMappingURL=l-main_iphone.css.map */

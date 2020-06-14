@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* メインコンテンツ_全体 */
+/* メインコンテンツ_検索部 */
+/* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_マップ部 */
+/* メインコンテンツ_サイドバー */
+/* フッター */
+/*没
+@mixin contentSentenseIphone($top: 0) {
+  display: block;
+  position:absolute;
+  top:$top;
+  padding-top: 10px;
+  background-color: rgba( 255, 255, 255, 0.55 );
+  color: black;
+  margin: 10px;
+  height: 100px;
+  width: 100%;
+
+  h3{
+    font-weight: normal;
+    padding-left: 5px;
+    font-size:12px      
+  }
+  p{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 7px;
+  }
+}
+*/
+.searchForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=p-commonInput.css.map */

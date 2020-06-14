@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@import "../Foundation/variable.scss";
+@import "../Foundation/mixin.scss";
+
+
+/*フロントページのコンテンツ部
+--------------------------- */
+article{
+  background-color: $contentBkColor;
+  width:$contentWidth;
+}
+
+// メインコンテンツ（トップ検索部）
+.head{
+ 
+  height: 150px;
+  // タイトルと検索ボックスは両サイド
+  display: flex;
+  justify-content: space-between;
+  
+  //検索分のタイトル
+  h1{
+    color: $searchTitleFontColor;
+    line-height: 150px; //親要素と同じ高さにすることで上下中央に
+    margin-left: 55px;
+    font-size: 2.5rem;
+  }
+  form{
+    margin-top: 60px;
+    margin-right: 20px;
+  }
+  p{
+    display: none;
+  }
+}
+
+// メインコンテンツの配置
+.front-contents{
+  //コンテンツとサイドバーを横並び
+  display: flex;
+  justify-content: space-between;
+}
+
+// メインコンテンツ（ダミーサイトイメージ部）
+.head-img {
+  background-image: url(../../img/head.png);
+  background-size: cover;
+  height: 300px;
+  
+  p{
+    line-height: 200px;
+    margin-left: 55px;
+    line-height: 300px;
+    font-size: 20px;
+    color: $dummyImgFontColor;
+  }
+}
+
+// メインコンテンツ（takeOut,eatIn部）
+.contents{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+  .content{
+
+    margin: 0 auto;
+    position:relative;
+  
+    .contentTiele {
+      position:absolute;
+      top:20px;
+      font-size: 40px;
+      padding-left: 10px;
+      color:white;
+    }
+    .contentSentense1{
+      @include contentSentense(50%);
+    }
+    .contentSentense2{
+      @include contentSentense(370px);
+    }
+  }
+
+}
+
+// メインコンテンツ（マップ部）
+.map-img {
+  background-image: url(../../img/map.png);
+  background-size: cover;
+  position: relative;
+  height: 650px;
+  z-index: 0;
+
+  ::before{
+    /* 透過した黒を上から重ねるイメージ */
+    background-color: rgba(0,0,0,0.2);
+    @include absPosition(0, 0, 0, 0);
+    content: ' ';
+    z-index: -1;
+  }
+
+  .map-text{
+    background-color: rgba(0,0,0,0.5);
+    padding-top: $mapTitlePaddingTop;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: $mapFontColor;
+    width: 60%;
+    height: calc(100% - #{$mapTitlePaddingTop});
+  }
+
+  h3{
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  p{
+    padding-top: 20px;
+    color: $mapFontColor;
+  }
+}
+
+/*サイドバー
+--------------------------- */
+aside{
+  width:$sideBarWidth;
+  padding-top: 60px;
+  padding-left: 20px;
+  background-color: $sideBarBackColor;
+
+  .title{
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+  }
+  .sub-title{
+    font-size: 1.2rem;
+  }
+  .sub-menu{
+    margin-top: 10px;
+    margin-bottom: 50px;  
+  }
+  li {
+    list-style: none;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  ul{
+    padding-left: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: $linkColor;
+  }
+}
