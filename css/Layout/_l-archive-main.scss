@@ -1,0 +1,120 @@
+
+// メインコンテンツ（ダミーサイトイメージ部）
+.archive-head-img {
+  background-image: url(../../img/head.png);
+  background-size: cover;
+  position: relative;
+  height: 250px;
+  z-index: 0;
+
+  ::before{
+    /* 透過した黒を上から重ねるイメージ */
+    background-color: rgba(0,0,0,0.4);
+    @include absPosition(0, 0, 0, 0);
+    content: ' ';
+    z-index: -1;
+  }
+
+  p{
+    line-height: 200px;
+    margin-left: 55px;
+    line-height: 300px;
+    font-size: 60px;
+    color: $dummyImgFontColor;
+  }
+  span{
+    font-size: 20px;
+    vertical-align: top;
+  }
+}
+
+
+
+//
+.archive-contents{
+  margin: 40px 60px;
+
+  h3{
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  p{
+    margin:20px 0 40px 0;    
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .archive-content-list{
+    display: flex;
+    flex-direction: column ;
+
+
+    .archive-content{
+      display: flex;
+      margin-top: 20px;
+      margin-bottom:20px;
+
+      img{
+        width: 50%;
+      }
+      .right-sentense{
+        background-color: #3C2B1C;
+      }
+      .archive-right-sentense-Tiele{
+        color: white;
+      }
+
+      .archive-Sentense{
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+        h3{
+          margin-top: 50px;
+        }
+
+        h4{
+          margin-top: 50px;
+        }
+
+        p{
+          margin-top: 20px;
+          margin-bottom: 90px;
+        }
+
+        .contentButton{
+          display:block;          
+          width:50%;
+          margin: 0 auto;
+          text-align:center;
+          padding:20px;
+
+          font-size:15px;
+          font-weight:normal;
+          text-decoration:none;
+          color:#707070;
+          background-color:#FFFFFF;
+          border-radius:10px;
+        }
+
+      }
+      
+    }
+  }
+
+}
+
+.pager_part{
+  margin-top:20px;
+  margin-bottom:20px;
+  text-align: center;
+  display: flex;
+  .pagger {
+    li{
+      display: inline;
+      padding:10px 15px;
+      border:1px #ccc solid;color:#000053;
+      border-radius: 5px / 5px;  
+    }
+  }
+}

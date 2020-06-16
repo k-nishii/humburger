@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import "../Foundation/variable.scss";
-@import "../Foundation/mixin.scss";
+@import "../Foundation/variable";
+@import "../Foundation/mixin";
 
 @media screen and (max-width: 1024px) {
 /* 1024pxまでの幅の場合に適応される */

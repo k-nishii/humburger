@@ -1,0 +1,712 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* メインコンテンツ_全体 */
+/* メインコンテンツ_検索部 */
+/* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_マップ部 */
+/* メインコンテンツ_サイドバー */
+/* フッター */
+/*フッター
+--------------------------- */
+footer {
+  width: 100%;
+  background: #9D8670;
+  padding: 26px 0;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer p {
+  font-size: 0.875rem;
+  padding-top: 10px;
+}
+
+/* メインコンテンツ_全体 */
+/* メインコンテンツ_検索部 */
+/* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_マップ部 */
+/* メインコンテンツ_サイドバー */
+/* フッター */
+/*フロントページのコンテンツ部
+--------------------------- */
+article {
+  background-color: #FFF7EF;
+  width: 85%;
+}
+
+.head {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head h1 {
+  color: #707070;
+  line-height: 150px;
+  margin-left: 55px;
+  font-size: 2.5rem;
+}
+
+.head form {
+  margin-top: 60px;
+  margin-right: 20px;
+}
+
+.head p {
+  display: none;
+}
+
+.front-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head-img {
+  background-image: url(../../img/head.png);
+  background-size: cover;
+  height: 300px;
+}
+
+.head-img p {
+  line-height: 200px;
+  margin-left: 55px;
+  line-height: 300px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.contents {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contents .content {
+  margin: 0 auto;
+  position: relative;
+}
+
+.contents .content .contentTiele {
+  position: absolute;
+  top: 20px;
+  font-size: 40px;
+  padding-left: 10px;
+  color: white;
+}
+
+.contents .content .contentSentense1 {
+  position: absolute;
+  top: 50%;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: black;
+  margin: 10px;
+  height: 100px;
+}
+
+.contents .content .contentSentense1 h3 {
+  font-weight: normal;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.contents .content .contentSentense1 p {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+.contents .content .contentSentense2 {
+  position: absolute;
+  top: 370px;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: black;
+  margin: 10px;
+  height: 100px;
+}
+
+.contents .content .contentSentense2 h3 {
+  font-weight: normal;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.contents .content .contentSentense2 p {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+.map-img {
+  background-image: url(../../img/map.png);
+  background-size: cover;
+  position: relative;
+  height: 650px;
+  z-index: 0;
+}
+
+.map-img ::before {
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  z-index: -1;
+}
+
+.map-img .map-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: #fff;
+  width: 60%;
+  height: calc(100% - 100px);
+}
+
+.map-img h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.map-img p {
+  padding-top: 20px;
+  color: #fff;
+}
+
+/*サイドバー
+--------------------------- */
+aside {
+  width: 15%;
+  padding-top: 60px;
+  padding-left: 20px;
+  background-color: #F2EDE9;
+}
+
+aside .title {
+  font-size: 1.8rem;
+  margin-bottom: 60px;
+}
+
+aside .sub-title {
+  font-size: 1.2rem;
+}
+
+aside .sub-menu {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+aside li {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+aside ul {
+  padding-left: 20px;
+}
+
+aside a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* メインコンテンツ_全体 */
+/* メインコンテンツ_検索部 */
+/* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_マップ部 */
+/* メインコンテンツ_サイドバー */
+/* フッター */
+@media screen and (max-width: 1024px) {
+  /* 1024pxまでの幅の場合に適応される */
+  /*フロントページのコンテンツ部
+--------------------------- */
+  article {
+    width: 100%;
+  }
+  .head {
+    display: block;
+    height: 240px;
+  }
+  .head h1 {
+    line-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .head form {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .head p {
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-size: 2.0rem;
+    color: #707070;
+    font-weight: bold;
+  }
+  /*サイドバー
+--------------------------- */
+  aside {
+    display: none;
+  }
+}
+
+/* メインコンテンツ_全体 */
+/* メインコンテンツ_検索部 */
+/* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_マップ部 */
+/* メインコンテンツ_サイドバー */
+/* フッター */
+@media screen and (max-width: 896px) {
+  /*フロントページのコンテンツ部
+--------------------------- */
+  article {
+    background-color: #FFF7EF;
+    width: 100%;
+  }
+  .head {
+    display: block;
+    height: 240px;
+  }
+  .head h1 {
+    line-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .head form {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .head p {
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-size: 2.0rem;
+    color: #707070;
+    font-weight: bold;
+  }
+  .contents {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contents .content {
+    margin: 0 auto;
+    position: relative;
+  }
+  .contents .content .contentTiele {
+    position: absolute;
+    top: 20px;
+    font-size: 40px;
+    padding-left: 10px;
+    color: white;
+  }
+  .contents .content .contentSentense1 {
+    position: absolute;
+    top: 50%;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+    color: black;
+    margin: 10px;
+    height: 100px;
+  }
+  .contents .content .contentSentense1 h3 {
+    font-weight: normal;
+    padding-left: 5px;
+    font-size: 20px;
+  }
+  .contents .content .contentSentense1 p {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+  }
+  .contents .content .contentSentense2 {
+    position: absolute;
+    top: 370px;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+    color: black;
+    margin: 10px;
+    height: 100px;
+  }
+  .contents .content .contentSentense2 h3 {
+    font-weight: normal;
+    padding-left: 5px;
+    font-size: 20px;
+  }
+  .contents .content .contentSentense2 p {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+  }
+  .map-img {
+    background-image: url(../../img/map.png);
+    background-size: cover;
+    position: relative;
+    height: 650px;
+    z-index: 0;
+  }
+  .map-img ::before {
+    /* 透過した黒を上から重ねるイメージ */
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    z-index: -1;
+  }
+  .map-img .map-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: #fff;
+    width: 60%;
+    height: calc(100% - 100px);
+  }
+  .map-img h3 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  .map-img p {
+    padding-top: 20px;
+    color: #fff;
+  }
+  /*サイドバー
+--------------------------- */
+  aside {
+    display: none;
+  }
+}
+
+.archive-head-img {
+  background-image: url(../../img/head.png);
+  background-size: cover;
+  position: relative;
+  height: 250px;
+  z-index: 0;
+}
+
+.archive-head-img ::before {
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  z-index: -1;
+}
+
+.archive-head-img p {
+  line-height: 200px;
+  margin-left: 55px;
+  line-height: 300px;
+  font-size: 60px;
+  color: #fff;
+}
+
+.archive-head-img span {
+  font-size: 20px;
+  vertical-align: top;
+}
+
+.archive-contents {
+  margin: 40px 60px;
+}
+
+.archive-contents h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.archive-contents p {
+  margin: 20px 0 40px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.archive-contents .archive-content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.archive-contents .archive-content-list .archive-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.archive-contents .archive-content-list .archive-content img {
+  width: 50%;
+}
+
+.archive-contents .archive-content-list .archive-content .right-sentense {
+  background-color: #3C2B1C;
+}
+
+.archive-contents .archive-content-list .archive-content .archive-right-sentense-Tiele {
+  color: white;
+}
+
+.archive-contents .archive-content-list .archive-content .archive-Sentense {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.archive-contents .archive-content-list .archive-content .archive-Sentense h3 {
+  margin-top: 50px;
+}
+
+.archive-contents .archive-content-list .archive-content .archive-Sentense h4 {
+  margin-top: 50px;
+}
+
+.archive-contents .archive-content-list .archive-content .archive-Sentense p {
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+.archive-contents .archive-content-list .archive-content .archive-Sentense .contentButton {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #707070;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.pager_part {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pager_part .pagger li {
+  display: inline;
+  padding: 10px 15px;
+  border: 1px #ccc solid;
+  color: #000053;
+  border-radius: 5px / 5px;
+}
+
+/* メインコンテンツ_全体 */
+/* メインコンテンツ_検索部 */
+/* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_マップ部 */
+/* メインコンテンツ_サイドバー */
+/* フッター */
+.searchInput {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.searchInput .searchText {
+  display: inline-block;
+  height: 35px;
+  width: 250px;
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #707070;
+  outline: none;
+}
+
+.searchInput .searchIcon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  z-index: 10;
+  border-width: 1px;
+  border-color: #707070;
+}
+
+.searchBtn {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  color: #707070;
+  background: #F2EDE9;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #707070;
+  outline: none;
+}
+
+/* メインコンテンツ_全体 */
+/* メインコンテンツ_検索部 */
+/* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_マップ部 */
+/* メインコンテンツ_サイドバー */
+/* フッター */
+.searchForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=application.css.map */

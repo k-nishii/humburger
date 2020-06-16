@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-@import "../Foundation/variable.scss";
-@import "../Foundation/mixin.scss";
-
+@import "../Foundation/variable";
+@import "../Foundation/mixin";
 
 /*フロントページのコンテンツ部
 --------------------------- */
@@ -68,7 +67,7 @@ article{
 
     margin: 0 auto;
     position:relative;
-  
+
     .contentTiele {
       position:absolute;
       top:20px;
