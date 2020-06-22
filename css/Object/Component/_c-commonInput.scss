@@ -43,3 +43,16 @@
   border-color: $searchBorderColor;
   outline: none;
 }
+
+//詳細ボタン
+.contentButton{
+  display:block;          
+  width:50%;
+  margin: 0 auto;
+  text-align:center;
+  padding:20px;
+  font-size:15px;
+  font-weight:normal;
+  text-decoration:none;
+  border-radius:10px;
+}
