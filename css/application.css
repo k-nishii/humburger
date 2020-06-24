@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/**
+* Foundation
+* ======================================= */
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -101,6 +104,7 @@ input, select {
   vertical-align: middle;
 }
 
+/* メディアクエリ用 */
 /* メインコンテンツ_全体 */
 /* メインコンテンツ_検索部 */
 /* メインコンテンツ_ダミーイメージ部 */
@@ -108,73 +112,29 @@ input, select {
 /* メインコンテンツ_サイドバー */
 /* フッター */
 /* アーカイブのコンテンツ */
-/*フッター
---------------------------- */
-footer {
-  width: 100%;
-  background: #9D8670;
-  padding: 26px 0;
-  text-align: center;
-  color: #fff;
-}
-
-footer a {
-  text-decoration: none;
-  color: #fff;
-}
-
-footer p {
-  font-size: 0.875rem;
-  padding-top: 10px;
-}
-
-/* メインコンテンツ_全体 */
-/* メインコンテンツ_検索部 */
-/* メインコンテンツ_ダミーイメージ部 */
-/* メインコンテンツ_マップ部 */
-/* メインコンテンツ_サイドバー */
-/* フッター */
-/* アーカイブのコンテンツ */
+/**
+* Layout
+* ======================================= */
 /*フロントページのコンテンツ部
 --------------------------- */
-article {
+.l-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-main article {
   background-color: #FFF7EF;
   width: 85%;
 }
 
-.head {
-  height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.head h1 {
-  color: #707070;
-  line-height: 150px;
-  margin-left: 55px;
-  font-size: 2.5rem;
-}
-
-.head form {
-  margin-top: 60px;
-  margin-right: 20px;
-}
-
-.head p {
-  display: none;
-}
-
-.front-contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (max-width: 1024px) {
+  .l-main article {
+    width: 100%;
+  }
 }
 
 .head-img {
@@ -301,125 +261,9 @@ article {
   color: #fff;
 }
 
-/*サイドバー
---------------------------- */
-aside {
-  width: 15%;
-  padding-top: 60px;
-  padding-left: 20px;
-  background-color: #F2EDE9;
-}
-
-aside .title {
-  font-size: 1.8rem;
-  margin-bottom: 60px;
-}
-
-aside .sub-title {
-  font-size: 1.2rem;
-}
-
-aside .sub-menu {
-  margin-top: 10px;
-  margin-bottom: 50px;
-}
-
-aside li {
-  list-style: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-aside ul {
-  padding-left: 20px;
-}
-
-aside a {
-  text-decoration: none;
-  color: #000;
-}
-
-/* メインコンテンツ_全体 */
-/* メインコンテンツ_検索部 */
-/* メインコンテンツ_ダミーイメージ部 */
-/* メインコンテンツ_マップ部 */
-/* メインコンテンツ_サイドバー */
-/* フッター */
-/* アーカイブのコンテンツ */
-@media screen and (max-width: 1024px) {
-  /* 1024pxまでの幅の場合に適応される */
-  /*フロントページのコンテンツ部
---------------------------- */
-  article {
-    width: 100%;
-  }
-  .head {
-    display: block;
-    height: 240px;
-  }
-  .head h1 {
-    line-height: 100px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .head form {
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
-  }
-  .head p {
-    display: block;
-    text-align: right;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-size: 2.0rem;
-    color: #707070;
-    font-weight: bold;
-  }
-  /*サイドバー
---------------------------- */
-  aside {
-    display: none;
-  }
-}
-
-/* メインコンテンツ_全体 */
-/* メインコンテンツ_検索部 */
-/* メインコンテンツ_ダミーイメージ部 */
-/* メインコンテンツ_マップ部 */
-/* メインコンテンツ_サイドバー */
-/* フッター */
-/* アーカイブのコンテンツ */
 @media screen and (max-width: 896px) {
   /*フロントページのコンテンツ部
 --------------------------- */
-  article {
-    background-color: #FFF7EF;
-    width: 100%;
-  }
-  .head {
-    display: block;
-    height: 240px;
-  }
-  .head h1 {
-    line-height: 100px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .head form {
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
-  }
-  .head p {
-    display: block;
-    text-align: right;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-size: 2.0rem;
-    color: #707070;
-    font-weight: bold;
-  }
   .contents {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -517,11 +361,25 @@ aside a {
     padding-top: 20px;
     color: #fff;
   }
-  /*サイドバー
+}
+
+/*サイドバー
 --------------------------- */
-  aside {
+.l-sidebar {
+  width: 15%;
+}
+
+@media screen and (max-width: 1024px) {
+  /* 1024pxまでの幅の場合に適応される */
+  .l-sidebar {
     display: none;
   }
+}
+
+/*フッター
+--------------------------- */
+.l-footer {
+  width: 100%;
 }
 
 .archive-head-img {
@@ -658,6 +516,7 @@ aside a {
   display: none;
 }
 
+/* メディアクエリ用 */
 /* メインコンテンツ_全体 */
 /* メインコンテンツ_検索部 */
 /* メインコンテンツ_ダミーイメージ部 */
@@ -870,6 +729,7 @@ td, th {
   margin: 20px 0;
 }
 
+/* メディアクエリ用 */
 /* メインコンテンツ_全体 */
 /* メインコンテンツ_検索部 */
 /* メインコンテンツ_ダミーイメージ部 */
@@ -899,6 +759,7 @@ td, th {
   }
 }
 
+/* メディアクエリ用 */
 /* メインコンテンツ_全体 */
 /* メインコンテンツ_検索部 */
 /* メインコンテンツ_ダミーイメージ部 */
@@ -926,13 +787,10 @@ td, th {
   }
 }
 
-/* メインコンテンツ_全体 */
-/* メインコンテンツ_検索部 */
-/* メインコンテンツ_ダミーイメージ部 */
-/* メインコンテンツ_マップ部 */
-/* メインコンテンツ_サイドバー */
-/* フッター */
-/* アーカイブのコンテンツ */
+/**
+* Object
+* ======================================= */
+/*  Component --------------------- */
 .searchInput {
   position: relative;
   display: -webkit-box;
@@ -968,10 +826,10 @@ td, th {
   height: 35px;
   color: #707070;
   background: #F2EDE9;
-  border-radius: 10px;
   border-width: 1px;
   border-color: #707070;
   outline: none;
+  border-radius: 10px;
 }
 
 .contentButton {
@@ -986,14 +844,34 @@ td, th {
   border-radius: 10px;
 }
 
-/* メインコンテンツ_全体 */
-/* メインコンテンツ_検索部 */
-/* メインコンテンツ_ダミーイメージ部 */
-/* メインコンテンツ_マップ部 */
-/* メインコンテンツ_サイドバー */
-/* フッター */
-/* アーカイブのコンテンツ */
-.searchForm {
+/*  Project --------------------- */
+.p-mainHead {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.p-mainHead .headMenu {
+  display: none;
+}
+
+.p-mainHead h1 {
+  color: #707070;
+  line-height: 150px;
+  margin-left: 55px;
+  font-size: 2.5rem;
+}
+
+.p-mainHead form {
+  margin-top: 60px;
+  margin-right: 20px;
+}
+
+.p-searchForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1001,4 +879,89 @@ td, th {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+@media screen and (max-width: 1024px) {
+  /* 1024pxまでの幅の場合に適応される */
+  .p-mainHead {
+    display: block;
+    height: 240px;
+  }
+  .p-mainHead .headMenu {
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-size: 2.0rem;
+    color: #707070;
+    font-weight: bold;
+  }
+  .p-mainHead h1 {
+    line-height: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .p-mainHead form {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+/*サイドバー
+--------------------------- */
+.p-sidebar {
+  padding-top: 60px;
+  padding-left: 20px;
+  background-color: #F2EDE9;
+}
+
+.p-sidebar > .title {
+  font-size: 1.8rem;
+  margin-bottom: 60px;
+}
+
+.p-sidebar > .sub-menu {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.p-sidebar > .sub-menu > .sub-title {
+  font-size: 1.2rem;
+}
+
+.p-sidebar > .sub-menu > ul {
+  padding-left: 20px;
+}
+
+.p-sidebar > .sub-menu > ul > li {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.p-sidebar > .sub-menu > ul > li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*フッター
+--------------------------- */
+.p-footer {
+  background: #9D8670;
+  padding: 26px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.p-footer > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.p-footer > p {
+  font-size: 0.875rem;
+  padding-top: 10px;
+}
+
+/*  Utility --------------------- */
 /*# sourceMappingURL=application.css.map */

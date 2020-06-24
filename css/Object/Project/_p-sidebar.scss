@@ -1,0 +1,37 @@
+/*サイドバー
+--------------------------- */
+
+.p-sidebar{
+  padding-top: 60px;
+  padding-left: 20px;
+  background-color: $sideBarBackColor;
+
+  >.title{
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+  }
+
+  >.sub-menu{
+    margin-top: 10px;
+    margin-bottom: 50px;  
+
+    >.sub-title{
+      font-size: 1.2rem;
+    }
+
+    >ul{
+      padding-left: 20px;
+
+      >li {
+        list-style: none;
+        margin-top:20px;
+        margin-bottom:20px;
+
+        >a{
+          text-decoration: none;
+          color: $linkColor;
+        }  
+      }  
+    }
+  }
+}

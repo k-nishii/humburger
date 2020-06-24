@@ -1,0 +1,65 @@
+// メインコンテンツ（トップ検索部）
+.p-mainHead{
+ 
+  height: 150px;
+  // タイトルと検索ボックスは両サイド
+  display: flex;
+  justify-content: space-between;
+  
+  //メニュー（通常非表示、タブレットサイズ以下のみ表示）
+  .headMenu{
+    display: none;
+  }
+
+  //検索部のタイトル
+  h1{
+    color: $searchTitleFontColor;
+    line-height: 150px; //親要素と同じ高さにすることで上下中央に
+    margin-left: 55px;
+    font-size: 2.5rem;
+  }
+  form{
+    margin-top: 60px;
+    margin-right: 20px;
+  }
+}
+
+// 検索部（検索入力のテキストボックスと検索ボタン）
+.p-searchForm{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  /* 1024pxまでの幅の場合に適応される */
+  
+  // メインコンテンツ（トップ検索部）
+  .p-mainHead{
+   
+    display: block;
+    height: 240px;
+    
+    //メニュー（通常非表示、タブレットサイズ以下のみ表示）
+    .headMenu{
+      display: block;
+      text-align:right;
+      padding-top: 20px;
+      padding-right: 30px;
+      font-size: 2.0rem;
+      color: $searchTitleFontColor;
+      font-weight: bold;
+    }
+
+    //検索部のタイトル
+    h1{
+      line-height: 100px;
+      margin: 0 auto;
+      text-align:center;
+    }
+    form{
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+    }
+  }
+}

@@ -1,44 +1,20 @@
-@charset "UTF-8";
-
-@import "../Foundation/variable";
-@import "../Foundation/mixin";
-
 /*フロントページのコンテンツ部
 --------------------------- */
-article{
-  background-color: $contentBkColor;
-  width:$contentWidth;
-}
-
-// メインコンテンツ（トップ検索部）
-.head{
- 
-  height: 150px;
-  // タイトルと検索ボックスは両サイド
-  display: flex;
-  justify-content: space-between;
-  
-  //検索分のタイトル
-  h1{
-    color: $searchTitleFontColor;
-    line-height: 150px; //親要素と同じ高さにすることで上下中央に
-    margin-left: 55px;
-    font-size: 2.5rem;
-  }
-  form{
-    margin-top: 60px;
-    margin-right: 20px;
-  }
-  p{
-    display: none;
-  }
-}
 
 // メインコンテンツの配置
-.front-contents{
+.l-main{
   //コンテンツとサイドバーを横並び
   display: flex;
   justify-content: space-between;
+
+  article{
+    background-color: $contentBkColor;
+    width:$contentWidth;
+
+    @media screen and (max-width: $media_tablet){
+      width: 100%;        
+    }
+  }
 }
 
 // メインコンテンツ（ダミーサイトイメージ部）
@@ -118,38 +94,5 @@ article{
   p{
     padding-top: 20px;
     color: $mapFontColor;
-  }
-}
-
-/*サイドバー
---------------------------- */
-aside{
-  width:$sideBarWidth;
-  padding-top: 60px;
-  padding-left: 20px;
-  background-color: $sideBarBackColor;
-
-  .title{
-    font-size: 1.8rem;
-    margin-bottom: 60px;
-  }
-  .sub-title{
-    font-size: 1.2rem;
-  }
-  .sub-menu{
-    margin-top: 10px;
-    margin-bottom: 50px;  
-  }
-  li {
-    list-style: none;
-    margin-top:20px;
-    margin-bottom:20px;
-  }
-  ul{
-    padding-left: 20px;
-  }
-  a{
-    text-decoration: none;
-    color: $linkColor;
   }
 }

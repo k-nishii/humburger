@@ -1,4 +1,6 @@
-@charset "UTF-8";
+/* メディアクエリ用 */
+$media_tablet: 1024px;
+$media_smartPhone: 896px;
 
 /* メインコンテンツ_全体 */
 $contentBkColor:#FFF7EF;
@@ -24,7 +26,6 @@ $linkColor:#000;
 /* フッター */
 $footerBackColor:#9D8670;
 $footerFontColor:#fff;
-
 
 /* アーカイブのコンテンツ */
 $archiveMenuFontColor:#fff;
