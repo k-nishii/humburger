@@ -1,7 +1,8 @@
 // メインコンテンツ（トップ検索部）
 .p-mainHead{
  
-  height: 150px;
+  //height: 150px;
+  height: 15vh;
   // タイトルと検索ボックスは両サイド
   display: flex;
   justify-content: space-between;
@@ -14,7 +15,7 @@
   //検索部のタイトル
   h1{
     color: $searchTitleFontColor;
-    line-height: 150px; //親要素と同じ高さにすることで上下中央に
+    line-height: 15vh; //親要素と同じ高さにすることで上下中央に
     margin-left: 55px;
     font-size: 2.5rem;
   }
@@ -28,6 +29,48 @@
 .p-searchForm{
   display: flex;
   justify-content: center;
+}
+
+//検索用のテキストボックス(虫眼鏡アイコン付き)
+.p-searchInputArea{
+
+  position:relative;
+  display: flex;
+
+  //テキストボックス
+  .searchText{
+    display: inline-block;
+    height: 35px;
+    width: 250px;
+    padding-inline-start: 30px;
+    margin-right: 5px;
+    border-radius:10px;
+    border-width: 1px;
+    border-color: $searchBorderColor;
+    outline: none;
+  } 
+  //テキストボックス内の虫眼鏡アイコン
+  .searchIcon{
+    position: absolute;
+    top:8px;
+    left: 10px;
+    z-index: 10;
+    border-width: 1px;
+    border-color: $searchBorderColor;
+  }
+}
+
+//検索ボタン
+.p-searchBtn{
+  display: inline-block;
+  width:100px;
+  height:35px;
+  color: $searchBorderColor;
+  background:$searchBtnColor;
+  border-width: 1px;
+  border-color: $searchBorderColor;
+  outline: none;
+  border-radius:10px;
 }
 
 @media screen and (max-width: 1024px) {

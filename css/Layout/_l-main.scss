@@ -1,6 +1,3 @@
-/*フロントページのコンテンツ部
---------------------------- */
-
 // メインコンテンツの配置
 .l-main{
   //コンテンツとサイドバーを横並び
@@ -14,85 +11,5 @@
     @media screen and (max-width: $media_tablet){
       width: 100%;        
     }
-  }
-}
-
-// メインコンテンツ（ダミーサイトイメージ部）
-.head-img {
-  background-image: url(../../img/head.png);
-  background-size: cover;
-  height: 300px;
-  
-  p{
-    line-height: 200px;
-    margin-left: 55px;
-    line-height: 300px;
-    font-size: 20px;
-    color: $dummyImgFontColor;
-  }
-}
-
-// メインコンテンツ（takeOut,eatIn部）
-.contents{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
-
-  .content{
-
-    margin: 0 auto;
-    position:relative;
-
-    .contentTiele {
-      position:absolute;
-      top:20px;
-      font-size: 40px;
-      padding-left: 10px;
-      color:white;
-    }
-    .contentSentense1{
-      @include contentSentense(50%);
-    }
-    .contentSentense2{
-      @include contentSentense(370px);
-    }
-  }
-
-}
-
-// メインコンテンツ（マップ部）
-.map-img {
-  background-image: url(../../img/map.png);
-  background-size: cover;
-  position: relative;
-  height: 650px;
-  z-index: 0;
-
-  ::before{
-    /* 透過した黒を上から重ねるイメージ */
-    background-color: rgba(0,0,0,0.2);
-    @include absPosition(0, 0, 0, 0);
-    content: ' ';
-    z-index: -1;
-  }
-
-  .map-text{
-    background-color: rgba(0,0,0,0.5);
-    padding-top: $mapTitlePaddingTop;
-    padding-left: 80px;
-    padding-right: 80px;
-    color: $mapFontColor;
-    width: 60%;
-    height: calc(100% - #{$mapTitlePaddingTop});
-  }
-
-  h3{
-    font-size: 2rem;
-    font-weight: normal;
-  }
-  p{
-    padding-top: 20px;
-    color: $mapFontColor;
   }
 }

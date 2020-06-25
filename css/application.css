@@ -108,6 +108,7 @@ input, select {
 /* メインコンテンツ_全体 */
 /* メインコンテンツ_検索部 */
 /* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_takeOut,eatIn部 */
 /* メインコンテンツ_マップ部 */
 /* メインコンテンツ_サイドバー */
 /* フッター */
@@ -115,8 +116,6 @@ input, select {
 /**
 * Layout
 * ======================================= */
-/*フロントページのコンテンツ部
---------------------------- */
 .l-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,232 +133,6 @@ input, select {
 @media screen and (max-width: 1024px) {
   .l-main article {
     width: 100%;
-  }
-}
-
-.head-img {
-  background-image: url(../../img/head.png);
-  background-size: cover;
-  height: 300px;
-}
-
-.head-img p {
-  line-height: 200px;
-  margin-left: 55px;
-  line-height: 300px;
-  font-size: 20px;
-  color: #fff;
-}
-
-.contents {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contents .content {
-  margin: 0 auto;
-  position: relative;
-}
-
-.contents .content .contentTiele {
-  position: absolute;
-  top: 20px;
-  font-size: 40px;
-  padding-left: 10px;
-  color: white;
-}
-
-.contents .content .contentSentense1 {
-  position: absolute;
-  top: 50%;
-  padding-top: 10px;
-  background-color: rgba(255, 255, 255, 0.55);
-  color: black;
-  margin: 10px;
-  height: 100px;
-}
-
-.contents .content .contentSentense1 h3 {
-  font-weight: normal;
-  padding-left: 5px;
-  font-size: 20px;
-}
-
-.contents .content .contentSentense1 p {
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 12px;
-}
-
-.contents .content .contentSentense2 {
-  position: absolute;
-  top: 370px;
-  padding-top: 10px;
-  background-color: rgba(255, 255, 255, 0.55);
-  color: black;
-  margin: 10px;
-  height: 100px;
-}
-
-.contents .content .contentSentense2 h3 {
-  font-weight: normal;
-  padding-left: 5px;
-  font-size: 20px;
-}
-
-.contents .content .contentSentense2 p {
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 12px;
-}
-
-.map-img {
-  background-image: url(../../img/map.png);
-  background-size: cover;
-  position: relative;
-  height: 650px;
-  z-index: 0;
-}
-
-.map-img ::before {
-  /* 透過した黒を上から重ねるイメージ */
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: ' ';
-  z-index: -1;
-}
-
-.map-img .map-text {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding-top: 100px;
-  padding-left: 80px;
-  padding-right: 80px;
-  color: #fff;
-  width: 60%;
-  height: calc(100% - 100px);
-}
-
-.map-img h3 {
-  font-size: 2rem;
-  font-weight: normal;
-}
-
-.map-img p {
-  padding-top: 20px;
-  color: #fff;
-}
-
-@media screen and (max-width: 896px) {
-  /*フロントページのコンテンツ部
---------------------------- */
-  .contents {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contents .content {
-    margin: 0 auto;
-    position: relative;
-  }
-  .contents .content .contentTiele {
-    position: absolute;
-    top: 20px;
-    font-size: 40px;
-    padding-left: 10px;
-    color: white;
-  }
-  .contents .content .contentSentense1 {
-    position: absolute;
-    top: 50%;
-    padding-top: 10px;
-    background-color: rgba(255, 255, 255, 0.55);
-    color: black;
-    margin: 10px;
-    height: 100px;
-  }
-  .contents .content .contentSentense1 h3 {
-    font-weight: normal;
-    padding-left: 5px;
-    font-size: 20px;
-  }
-  .contents .content .contentSentense1 p {
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 12px;
-  }
-  .contents .content .contentSentense2 {
-    position: absolute;
-    top: 370px;
-    padding-top: 10px;
-    background-color: rgba(255, 255, 255, 0.55);
-    color: black;
-    margin: 10px;
-    height: 100px;
-  }
-  .contents .content .contentSentense2 h3 {
-    font-weight: normal;
-    padding-left: 5px;
-    font-size: 20px;
-  }
-  .contents .content .contentSentense2 p {
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 12px;
-  }
-  .map-img {
-    background-image: url(../../img/map.png);
-    background-size: cover;
-    position: relative;
-    height: 650px;
-    z-index: 0;
-  }
-  .map-img ::before {
-    /* 透過した黒を上から重ねるイメージ */
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: ' ';
-    z-index: -1;
-  }
-  .map-img .map-text {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 100px;
-    padding-left: 80px;
-    padding-right: 80px;
-    color: #fff;
-    width: 60%;
-    height: calc(100% - 100px);
-  }
-  .map-img h3 {
-    font-size: 2rem;
-    font-weight: normal;
-  }
-  .map-img p {
-    padding-top: 20px;
-    color: #fff;
   }
 }
 
@@ -520,6 +293,7 @@ input, select {
 /* メインコンテンツ_全体 */
 /* メインコンテンツ_検索部 */
 /* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_takeOut,eatIn部 */
 /* メインコンテンツ_マップ部 */
 /* メインコンテンツ_サイドバー */
 /* フッター */
@@ -733,6 +507,7 @@ td, th {
 /* メインコンテンツ_全体 */
 /* メインコンテンツ_検索部 */
 /* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_takeOut,eatIn部 */
 /* メインコンテンツ_マップ部 */
 /* メインコンテンツ_サイドバー */
 /* フッター */
@@ -763,6 +538,7 @@ td, th {
 /* メインコンテンツ_全体 */
 /* メインコンテンツ_検索部 */
 /* メインコンテンツ_ダミーイメージ部 */
+/* メインコンテンツ_takeOut,eatIn部 */
 /* メインコンテンツ_マップ部 */
 /* メインコンテンツ_サイドバー */
 /* フッター */
@@ -791,47 +567,6 @@ td, th {
 * Object
 * ======================================= */
 /*  Component --------------------- */
-.searchInput {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.searchInput .searchText {
-  display: inline-block;
-  height: 35px;
-  width: 250px;
-  -webkit-padding-start: 30px;
-          padding-inline-start: 30px;
-  margin-right: 5px;
-  border-radius: 10px;
-  border-width: 1px;
-  border-color: #707070;
-  outline: none;
-}
-
-.searchInput .searchIcon {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  z-index: 10;
-  border-width: 1px;
-  border-color: #707070;
-}
-
-.searchBtn {
-  display: inline-block;
-  width: 100px;
-  height: 35px;
-  color: #707070;
-  background: #F2EDE9;
-  border-width: 1px;
-  border-color: #707070;
-  outline: none;
-  border-radius: 10px;
-}
-
 .contentButton {
   display: block;
   width: 50%;
@@ -846,7 +581,7 @@ td, th {
 
 /*  Project --------------------- */
 .p-mainHead {
-  height: 150px;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,7 +596,7 @@ td, th {
 
 .p-mainHead h1 {
   color: #707070;
-  line-height: 150px;
+  line-height: 15vh;
   margin-left: 55px;
   font-size: 2.5rem;
 }
@@ -878,6 +613,47 @@ td, th {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.p-searchInputArea {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-searchInputArea .searchText {
+  display: inline-block;
+  height: 35px;
+  width: 250px;
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #707070;
+  outline: none;
+}
+
+.p-searchInputArea .searchIcon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  z-index: 10;
+  border-width: 1px;
+  border-color: #707070;
+}
+
+.p-searchBtn {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  color: #707070;
+  background: #F2EDE9;
+  border-width: 1px;
+  border-color: #707070;
+  outline: none;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -905,6 +681,148 @@ td, th {
     margin: 0 auto;
     padding: 10px;
   }
+}
+
+.p-headImg {
+  background-image: url(../../img/head.png);
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.p-headImg > p {
+  margin-left: 55px;
+  line-height: 30vh;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.p-mainContents {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.p-mainContents .p-content {
+  margin: 0 auto;
+  position: relative;
+}
+
+.p-mainContents .p-content img {
+  width: 400px;
+  height: 500px;
+}
+
+.p-mainContents .p-content .contentTiele {
+  position: absolute;
+  top: 20px;
+  font-size: 2.5rem;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.p-mainContents .p-content .contentSentense1 {
+  position: absolute;
+  top: 50%;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: black;
+  margin: 10px;
+  height: 100px;
+}
+
+.p-mainContents .p-content .contentSentense1 h3 {
+  font-weight: normal;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+
+.p-mainContents .p-content .contentSentense1 p {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.825rem;
+}
+
+.p-mainContents .p-content .contentSentense2 {
+  position: absolute;
+  top: 73.5%;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: black;
+  margin: 10px;
+  height: 100px;
+}
+
+.p-mainContents .p-content .contentSentense2 h3 {
+  font-weight: normal;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+
+.p-mainContents .p-content .contentSentense2 p {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.825rem;
+}
+
+@media screen and (max-width: 896px) {
+  .p-mainContents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.map-img {
+  background-image: url(../../img/map.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 650px;
+  z-index: 0;
+}
+
+.map-img ::before {
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  z-index: -1;
+}
+
+.map-img .map-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: #fff;
+  width: 60%;
+  height: calc(100% - 100px);
+}
+
+.map-img .map-text > h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.map-img .map-text > p {
+  padding-top: 20px;
+  color: #fff;
 }
 
 /*サイドバー

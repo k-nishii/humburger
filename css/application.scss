@@ -13,7 +13,6 @@
 * ======================================= */
 
 @import "Layout/l-main";
-@import "Layout/l-main_iphone";
 @import "Layout/l-sidebar";
 @import "Layout/l-footer";
 @import "Layout/l-archive-main";
@@ -33,6 +32,9 @@
 /*  Project --------------------- */
 
 @import "Object/Project/p-mainHead";
+@import "Object/Project/p-mainHeadImg";
+@import "Object/Project/p-mainContent";
+@import "Object/Project/p-mainMap";
 @import "Object/Project/p-sidebar";
 @import "Object/Project/p-footer";
 
