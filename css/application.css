@@ -160,6 +160,16 @@ input, select {
 * Object
 * ======================================= */
 /*  Component --------------------- */
+.c-btn {
+  display: inline-block;
+  outline: none;
+  border-radius: 10px;
+  border-width: 1px;
+  color: #707070;
+  background: #F2EDE9;
+  border-color: #707070;
+}
+
 /*  Project --------------------- */
 .p-mainHead {
   height: 15vh;
@@ -226,15 +236,8 @@ input, select {
 }
 
 .p-searchBtn {
-  display: inline-block;
   width: 100px;
   height: 35px;
-  color: #707070;
-  background: #F2EDE9;
-  border-width: 1px;
-  border-color: #707070;
-  outline: none;
-  border-radius: 10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -728,8 +731,9 @@ input, select {
   }
 }
 
-.p-sinngle_p {
-  margin: 20px 0;
+.p-singlePageBtn {
+  width: 300px;
+  height: 50px;
 }
 
 /*サイドバー
@@ -828,6 +832,11 @@ td, th {
 }
 
 .single_table tr td:nth-child(1) {
-  width: 40%;
+  width: 30%;
+}
+
+.u-text {
+  margin: 20px 0;
+  word-break: break-all;
 }
 /*# sourceMappingURL=application.css.map */
