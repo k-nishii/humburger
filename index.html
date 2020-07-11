@@ -16,7 +16,7 @@
     <article>
       <!-- メインコンテンツ（トップ検索部）-->
       <div class="p-mainHead">
-        <p class="headMenu">Menu</p>
+        <p class="headMenu" id="headMenu">Menu</p>
         <h1>Hamburger</h1>
         <form action="https://www.google.com/" method="GET">
           <div class="p-searchForm">
@@ -73,7 +73,7 @@
     </article>
     
     <!-- サイドバー-->
-    <aside class="l-sidebar p-sidebar">
+    <!-- <aside class="l-sidebar p-sidebar">
       <h3 class="title">Menu</h3>
       <div class="sub-menu">
         <p class="sub-title">バーガー</p>
@@ -107,7 +107,64 @@
           <li><a href="#">コーヒ（Ice/Hot）</a></li>
         </ul>  
       </div>
-    </aside>
+    </aside> -->
+
+  <div id="nav-toggle">
+      <div>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </div>
+   
+  <aside id="sidebar">
+    
+    <nav id="global-nav">
+      <h3 class="title">Menu</h3>
+      <ul>
+          <!-- <li><a href="#">Home</a></li> -->
+          <li class="sub-menu">
+              <a href="#" class="sub-menu-head">About</a>
+              <ul class="sub-menu-nav">
+                  <li><a href="#">About 1</a></li>
+                  <li><a href="#">About 2</a></li>
+                  <li><a href="#">About 3</a></li>
+              </ul>
+          </li>
+          <li class="sub-menu">
+              <a href="#" class="sub-menu-head">Products</a>
+              <ul class="sub-menu-nav">
+                  <li><a href="#">Product 1</a></li>
+                  <li><a href="#">Product 2</a></li>
+                  <li><a href="#">Product 3</a></li>
+              </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="#" class="sub-menu-head">Products</a>
+            <ul class="sub-menu-nav">
+                <li><a href="#">Product 1</a></li>
+                <li><a href="#">Product 2</a></li>
+                <li><a href="#">Product 3</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="#" class="sub-menu-head">Products</a>
+            <ul class="sub-menu-nav">
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 2</a></li>
+              <li><a href="#">Product 3</a></li>
+            </ul>
+          </li>                  
+          <!-- 
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Contact</a></li>
+          -->
+      </ul>
+    </nav>
+  </aside>
+    
+
+
   </div>
 
   <!-- フッター-->
@@ -116,5 +173,24 @@
     <p><small>&copy; RaiseTech</small></p>
   </footer>
 
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  <script type="text/javascript">
+  (function($) {
+    $(function () {
+        $('.sub-menu').on({
+            'mouseenter': function () {
+                $(this).addClass('is-active');
+            },
+            'mouseleave': function () {
+                $(this).removeClass('is-active');
+            }
+        });
+        $('#headMenu,#nav-toggle,#overlay').on('click', function() {
+            $('body').toggleClass('open');
+        });
+    });
+  })(jQuery);
+  </script>
 </body>
 </html>
