@@ -75,15 +75,19 @@
     display: block;
     height: 240px;
     
-    //メニュー（通常非表示、タブレットサイズ以下のみ表示）
-    .headMenu{
-      display: block;
-      text-align:right;
-      padding-top: 20px;
-      padding-right: 30px;
-      font-size: 2.0rem;
-      color: $searchTitleFontColor;
-      font-weight: bold;
+    // ページ上部のメニューボタン部分
+    .headMenuLine{
+      display: flex;
+      justify-content: flex-end;
+      //メニュー（通常非表示、タブレットサイズ以下のみ表示）
+      .headMenu{
+        display: inline-block;
+        margin-right: 20px;
+        padding-top: 20px;
+        font-size: 2.0rem;
+        color: $searchTitleFontColor;
+        font-weight: bold;
+      }  
     }
 
     //検索部のタイトル

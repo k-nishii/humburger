@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/application.css">  
@@ -16,7 +15,9 @@
     <article>
       <!-- メインコンテンツ（トップ検索部）-->
       <div class="p-mainHead">
-        <p class="headMenu" id="headMenu">Menu</p>
+        <div class="headMenuLine">
+          <p class="headMenu" id="headMenu">Menu</p>
+        </div>
         <h1>Hamburger</h1>
         <form action="https://www.google.com/" method="GET">
           <div class="p-searchForm">
@@ -108,63 +109,56 @@
         </ul>  
       </div>
     </aside> -->
-
-  <div id="nav-toggle">
-      <div>
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-  </div>
    
-  <aside id="sidebar">
+    <aside id="sidebar">
     
-    <nav id="global-nav">
-      <h3 class="title">Menu</h3>
-      <ul>
-          <!-- <li><a href="#">Home</a></li> -->
+      <nav id="global-nav">
+        <span id="closeBtn">×</span>      
+        <h3 id="oprnBtn" class="title">Menu</h3>
+        <ul>
           <li class="sub-menu">
-              <a href="#" class="sub-menu-head">About</a>
-              <ul class="sub-menu-nav">
-                  <li><a href="#">About 1</a></li>
-                  <li><a href="#">About 2</a></li>
-                  <li><a href="#">About 3</a></li>
-              </ul>
-          </li>
-          <li class="sub-menu">
-              <a href="#" class="sub-menu-head">Products</a>
-              <ul class="sub-menu-nav">
-                  <li><a href="#">Product 1</a></li>
-                  <li><a href="#">Product 2</a></li>
-                  <li><a href="#">Product 3</a></li>
-              </ul>
-          </li>
-          <li class="sub-menu">
-            <a href="#" class="sub-menu-head">Products</a>
+            <a href="#" class="sub-menu-head">バーガー</a>
             <ul class="sub-menu-nav">
-                <li><a href="#">Product 1</a></li>
-                <li><a href="#">Product 2</a></li>
-                <li><a href="#">Product 3</a></li>
+                <li><a href="#">ハンバーガー</a></li>
+                <li><a href="#">チーズバーガー</a></li>
+                <li><a href="#">テリヤキバーガー</a></li>
+                <li><a href="#">アボガドバーガー</a></li>
+                <li><a href="#">フィッシュバーガー</a></li>
+                <li><a href="#">ベーコンバーガー</a></li>
+                <li><a href="#">チキンバーガー</a></li>
             </ul>
           </li>
+
           <li class="sub-menu">
-            <a href="#" class="sub-menu-head">Products</a>
+            <a href="#" class="sub-menu-head">サイド</a>
             <ul class="sub-menu-nav">
-              <li><a href="#">Product 1</a></li>
-              <li><a href="#">Product 2</a></li>
-              <li><a href="#">Product 3</a></li>
+                <li><a href="#">ポテト</a></li>
+                <li><a href="#">サラダ</a></li>
+                <li><a href="#">ナゲット</a></li>
+                <li><a href="#">コーン</a></li>                  
             </ul>
-          </li>                  
-          <!-- 
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Contact</a></li>
-          -->
-      </ul>
-    </nav>
-  </aside>
+          </li>
+
+          <li class="sub-menu">
+            <a href="#" class="sub-menu-head">ドリンク</a>
+            <ul class="sub-menu-nav">
+                <li><a href="#">コーラ</a></li>
+                <li><a href="#">ファンタ</a></li>
+                <li><a href="#">オレンジ</a></li>
+                <li><a href="#">アップル</a></li>
+                <li><a href="#">紅茶（Ice/Hot）</a></li>
+                <li><a href="#">コーヒ（Ice/Hot）</a></li>                
+            </ul>
+          </li>             
+
+            <!-- 
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Contact</a></li>
+            -->
+        </ul>
+      </nav>
+    </aside>
     
-
-
   </div>
 
   <!-- フッター-->
@@ -186,9 +180,13 @@
                 $(this).removeClass('is-active');
             }
         });
-        $('#headMenu,#nav-toggle,#overlay').on('click', function() {
+        // $('#headMenu,#nav-toggle,#overlay').on('click', function() {
+        //     $('body').toggleClass('open');
+        // });
+        $('#headMenu,#closeBtn').on('click', function() {
             $('body').toggleClass('open');
         });
+
     });
   })(jQuery);
   </script>
