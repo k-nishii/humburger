@@ -1,5 +1,3 @@
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-<script type="text/javascript">
 (function($) {
     $(function () {
         $('.sub-menu').on({
@@ -10,9 +8,9 @@
                 $(this).removeClass('is-active');
             }
         });
-        $('#headMenu,#nav-toggle,#overlay').on('click', function() {
+        $('#headMenu,#closeBtn').on('click', function() {
             $('body').toggleClass('open');
         });
+
     });
-})(jQuery);
-</script>
+  })(jQuery);

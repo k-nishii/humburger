@@ -16,7 +16,9 @@
     <article>
       <!-- メインコンテンツ（トップ検索部）-->
       <div class="p-mainHead">
-        <p class="headMenu">Menu</p>
+        <div class="headMenuLine">
+          <p class="headMenu" id="headMenu">Menu</p>
+        </div>
         <h1>Hamburger</h1>
         <form action="https://www.google.com/" method="GET">
           <div class="p-searchForm">
@@ -148,42 +150,56 @@
 
     </article>
     
-    <!-- サイドバー-->
-    <aside class="l-sidebar p-sidebar">
-      <h3 class="title">Menu</h3>
-      <div class="sub-menu">
-        <p class="sub-title">バーガー</p>
+    <!-- サイドバー-->  
+    <aside id="sidebar">
+    
+      <nav id="global-nav">
+        <span id="closeBtn">×</span>      
+        <h3 id="oprnBtn" class="title">Menu</h3>
         <ul>
-          <li><a href="#">ハンバーガー</a></li>
-          <li><a href="#">チーズバーガー</a></li>
-          <li><a href="#">テリヤキバーガー</a></li>
-          <li><a href="#">アボガドバーガー</a></li>
-          <li><a href="#">フィッシュバーガー</a></li>
-          <li><a href="#">ベーコンバーガー</a></li>
-          <li><a href="#">チキンバーガー</a></li>      
-        </ul>  
-      </div>
-      <div class="sub-menu">
-        <p class="sub-title">サイド</p>
-        <ul>
-          <li><a href="#">ポテト</a></li>
-          <li><a href="#">サラダ</a></li>
-          <li><a href="#">ナゲット</a></li>
-          <li><a href="#">コーン</a></li>
-        </ul>  
-      </div>
-      <div class="sub-menu">
-        <p class="sub-title">ドリンク</p>
-        <ul>
-          <li><a href="#">コーラ</a></li>
-          <li><a href="#">ファンタ</a></li>
-          <li><a href="#">オレンジ</a></li>
-          <li><a href="#">アップル</a></li>
-          <li><a href="#">紅茶（Ice/Hot）</a></li>
-          <li><a href="#">コーヒ（Ice/Hot）</a></li>
-        </ul>  
-      </div>
+          <li class="sub-menu">
+            <a href="#" class="sub-menu-head">バーガー</a>
+            <ul class="sub-menu-nav">
+                <li><a href="#">ハンバーガー</a></li>
+                <li><a href="#">チーズバーガー</a></li>
+                <li><a href="#">テリヤキバーガー</a></li>
+                <li><a href="#">アボガドバーガー</a></li>
+                <li><a href="#">フィッシュバーガー</a></li>
+                <li><a href="#">ベーコンバーガー</a></li>
+                <li><a href="#">チキンバーガー</a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a href="#" class="sub-menu-head">サイド</a>
+            <ul class="sub-menu-nav">
+                <li><a href="#">ポテト</a></li>
+                <li><a href="#">サラダ</a></li>
+                <li><a href="#">ナゲット</a></li>
+                <li><a href="#">コーン</a></li>                  
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a href="#" class="sub-menu-head">ドリンク</a>
+            <ul class="sub-menu-nav">
+                <li><a href="#">コーラ</a></li>
+                <li><a href="#">ファンタ</a></li>
+                <li><a href="#">オレンジ</a></li>
+                <li><a href="#">アップル</a></li>
+                <li><a href="#">紅茶（Ice/Hot）</a></li>
+                <li><a href="#">コーヒ（Ice/Hot）</a></li>                
+            </ul>
+          </li>             
+
+            <!-- 
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Contact</a></li>
+            -->
+        </ul>
+      </nav>
     </aside>
+
   </div>
 
 
@@ -192,6 +208,9 @@
     <a href="#">ショップ情報</a><span> | </span><a href="#">ヒストリー</a>
     <p><small>&copy; RaiseTech</small></p>
   </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  <script src="/js/test.js"></script>
 
 </body>
 </html>
